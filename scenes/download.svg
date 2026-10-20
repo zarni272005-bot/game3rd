@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 900" role="img" aria-labelledby="title desc">
+  <title id="title">Miko, the little sky explorer — character sketch</title>
+  <desc id="desc">A warm, loose pencil and watercolor sketch of a cheerful young explorer in an orange jacket, teal scarf, boots, and a compass backpack.</desc>
+  <defs>
+    <linearGradient id="paper" x2="0" y2="1"><stop stop-color="#fffaf0"/><stop offset="1" stop-color="#f5eddb"/></linearGradient>
+    <linearGradient id="coat" x2=".25" y2="1"><stop stop-color="#f4a26d"/><stop offset="1" stop-color="#d96d48"/></linearGradient>
+    <linearGradient id="scarf" x2="0" y2="1"><stop stop-color="#6ed1bb"/><stop offset="1" stop-color="#328f83"/></linearGradient>
+    <filter id="wash" x="-.2" y="-.2" width="1.4" height="1.4"><feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="2" seed="8"/><feDisplacementMap in="SourceGraphic" scale="1.7"/></filter>
+    <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".8" numOctaves="2" seed="5"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="table" tableValues="0 .08"/></feComponentTransfer><feBlend in="SourceGraphic" mode="multiply"/></filter>
+    <style>
+      .ink{stroke:#3d3942;stroke-width:4.2;stroke-linecap:round;stroke-linejoin:round}
+      .loose{fill:none;stroke:#62575a;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;opacity:.42}
+      .detail{fill:none;stroke:#604b4c;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+    </style>
+  </defs>
+  <rect width="720" height="900" fill="url(#paper)"/>
+  <g opacity=".2" fill="none" stroke="#b3a896" stroke-width="1">
+    <path d="M40 145 Q180 121 300 147T680 136M33 760 Q200 742 346 764T690 751"/>
+    <path d="M77 66v14m-7-7h14M633 193v14m-7-7h14M97 836v14m-7-7h14"/>
+  </g>
+  <ellipse cx="360" cy="825" rx="157" ry="24" fill="#8b8076" opacity=".13"/>
+
+  <!-- loose first-pass silhouette -->
+  <g class="loose" transform="translate(4 1)">
+    <path d="M281 580 Q250 627 263 678L239 787l45 8 42-96 29-60M421 580q49 38 35 93l22 115-43 9-41-92-33-49"/>
+    <path d="M280 421q-32 34-35 116l-12 85q40 34 128 29 94 6 133-24l-18-116q-10-60-45-88"/>
+    <path d="M283 300q-27-32-11-76 13-36 52-43 53-10 89 17 27 20 19 79l-6 49q-8 58-62 70-60 0-79-53z"/>
+  </g>
+
+  <!-- backpack and straps -->
+  <g filter="url(#wash)">
+    <path d="M447 410q39-10 55 23l20 97q-4 30-29 34l-40-11-21-116q-2-18 15-27z" fill="#71819a" class="ink"/>
+    <path d="M478 431q25 3 29 22l10 53-48 3-10-56q0-17 19-22z" fill="#8996a8" stroke="#3d3942" stroke-width="3"/>
+    <path d="M482 476q16-8 27 1l7 26q-17 12-31 2z" fill="#d8b46f" stroke="#3d3942" stroke-width="2.5"/>
+    <path d="M454 425q-16 27-20 66m45-70q-1 37 9 60" fill="none" stroke="#d5c5a7" stroke-width="7" stroke-linecap="round"/>
+  </g>
+
+  <!-- legs, socks, and scuffed trail boots -->
+  <g class="ink">
+    <path d="M294 612q-3 32-10 62l-27 89q-3 13 11 19l23 7q12 2 18-13l45-91 11-67z" fill="#71829b"/>
+    <path d="M382 612q23 20 36 58l37 78q6 14-7 23l-22 13q-13 4-20-11l-56-80-15-63z" fill="#71829b"/>
+    <path d="M267 747q-17 9-22 31l-8 34q-1 12 13 16l69 5q22-5 20-24l-9-37-28-14z" fill="#39485c"/>
+    <path d="M428 752q18 7 28 25l16 30q6 14-8 21l-64 25q-19 4-27-14l-9-32 19-31z" fill="#39485c"/>
+    <path d="M244 797q45 15 93-2m78 27q37 1 64-19" fill="none" stroke="#d9b567" stroke-width="5"/>
+  </g>
+  <path d="M290 660l21 11m-31 23 19 8m105-9 17-7m-4 34 16-9" class="loose"/>
+
+  <!-- jacket body -->
+  <g filter="url(#wash)">
+    <path d="M292 405q-33 13-46 54-14 43-20 112l-7 62q34 30 111 31l15-15 24 18q72 3 121-25l-18-129q-10-65-43-91-28-19-70-19z" fill="url(#coat)" class="ink"/>
+    <path d="M262 473q-22 40-23 109l-7 47 33 10 23-137" fill="#e8875a" stroke="#3d3942" stroke-width="3.4"/>
+    <path d="M424 477q21 38 25 89l10 63-33 13-25-115" fill="#e8875a" stroke="#3d3942" stroke-width="3.4"/>
+    <path d="M327 425l31 27 34-29 22 24-29 38-30 2-34-11-20-35z" fill="#ffc189" stroke="#3d3942" stroke-width="3.6"/>
+    <path d="M359 477l-1 169" fill="none" stroke="#9c503c" stroke-width="4"/>
+    <path d="M359 512l1 111" fill="none" stroke="#ffe0ae" stroke-width="1.8" stroke-dasharray="3 8"/>
+    <circle cx="373" cy="530" r="4" fill="#f6ce72"/><circle cx="373" cy="560" r="4" fill="#f6ce72"/>
+    <path d="M291 566q27 11 50-1v39q-23 16-50 1z" fill="#d66c4e" stroke="#3d3942" stroke-width="2.5"/>
+    <path d="M393 585q14-8 27 0v24q-14 9-28 0z" fill="#d66c4e" stroke="#3d3942" stroke-width="2.5"/>
+  </g>
+  <!-- sleeves and mitten-like hands -->
+  <path d="M247 488q-24 16-27 53l-12 71q-2 20 12 23 13 2 18-17l21-72" fill="#f1a06b" class="ink"/>
+  <path d="M447 491q24 16 30 50l15 63q5 18-10 25-14 4-21-13l-27-69" fill="#f1a06b" class="ink"/>
+  <path d="M204 606q-14 8-13 25 3 19 19 19 16-2 18-17l-2-22zM477 611q14-8 25 1 13 11 8 26-6 15-21 12-15-5-15-20z" fill="#efbd98" class="ink"/>
+
+  <!-- scarf loop and flying end -->
+  <g filter="url(#wash)">
+    <path d="M321 433q38 27 79-2l18 31q-46 41-101 5z" fill="url(#scarf)" class="ink"/>
+    <path d="M394 448q34-2 53 19l32 14-22 15-40-4-25-15z" fill="#54b8a5" class="ink"/>
+    <path d="M412 463l44 17m-35-2 33 14" class="loose"/>
+  </g>
+
+  <!-- head, ears, hair and face -->
+  <g filter="url(#wash)">
+    <path d="M283 316q-20-6-26 12-5 19 13 25l16-11m139-17q19-6 25 12 4 17-14 26l-15-10" fill="#efbf9c" class="ink"/>
+    <path d="M279 266q8-54 63-70 48-14 82 17 27 25 21 69l-5 56q-5 52-47 74-48 23-91-9-30-22-31-65z" fill="#efbf9c" class="ink"/>
+    <path d="M274 299q-20-51 11-88 25-29 66-25 43-1 69 25 23 23 20 67l-11-4q-10-25-26-35-22 27-57 30-30 3-50-8-5 25-22 42z" fill="#463746" class="ink"/>
+    <path d="M275 268q-8-27 9-48m89-29q31 4 48 28m-71-16q-15 16-14 39" class="loose"/>
+  </g>
+  <!-- loose hair wisps -->
+  <path d="M278 285q-12 11-8 30m167-50q15 9 12 24m-110-74q-15 1-21 13" class="loose"/>
+  <!-- expressive features -->
+  <path d="M306 302q11-10 22 0m37-1q12-11 23 0" fill="none" stroke="#463746" stroke-width="4" stroke-linecap="round"/>
+  <ellipse cx="321" cy="312" rx="3.5" ry="5" fill="#332e3a"/><ellipse cx="383" cy="311" rx="3.5" ry="5" fill="#332e3a"/>
+  <path d="M347 314q-5 11 2 13" class="detail"/>
+  <path d="M337 341q14 14 30-1" fill="none" stroke="#9c5f58" stroke-width="3.2" stroke-linecap="round"/>
+  <path d="M292 327q12-7 21 1m75 0q12-9 20 0" fill="none" stroke="#d9897e" stroke-width="5" stroke-linecap="round" opacity=".6"/>
+  <circle cx="340" cy="331" r="1.4" fill="#fff4df"/><circle cx="389" cy="307" r="1.3" fill="#fff4df"/>
+
+  <!-- compass badge -->
+  <circle cx="293" cy="565" r="17" fill="#edc96f" class="ink"/>
+  <path d="M293 552l5 13-5 13-5-13z" fill="#fff0b9" stroke="#705b4d" stroke-width="1.6"/>
+
+  <!-- small paper caption -->
+  <g transform="rotate(-2 360 875)">
+    <path d="M192 854q155-8 334 1" fill="none" stroke="#887a70" stroke-width="1.4" opacity=".48"/>
+    <text x="360" y="882" text-anchor="middle" fill="#665c5b" font-family="Georgia, serif" font-size="20" font-style="italic" letter-spacing="2">MIKO  •  LITTLE SKY EXPLORER</text>
+  </g>
+  <rect width="720" height="900" fill="transparent" filter="url(#grain)" pointer-events="none"/>
+</svg>
